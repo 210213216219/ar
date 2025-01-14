@@ -5,10 +5,10 @@ on:
 
 jobs:
   appendhello:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - users: actions/checout@v3
+      - uses: actions/checout@v3
       - name: appendhello
         run: |
-          echo "hello" >> data.json
+          echo "hello"
           
